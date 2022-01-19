@@ -5,11 +5,11 @@ export default function App() {
     const [open, setOpen] = useState(false)
     const openModal = () => {
         setOpen(true)
-        console.log(open);
     }
     return(
         <>
-            <Modal content='Employé Crée' isOpen={setOpen} open={open}/>
+            {/* isOpen allows to toggle value of open */}
+            <Modal content='Employé Crée' handleChange={setOpen} value={open}/>
             <button onClick={openModal}>button</button>
         </> 
 
