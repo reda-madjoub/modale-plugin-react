@@ -4,7 +4,6 @@ export default function Modal(props) {
     let {content, isOpen, open} = props
     
     const closeModal = _ => {
-        console.log('hi');
         isOpen(false)
     }
 

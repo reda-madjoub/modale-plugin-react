@@ -21,7 +21,6 @@ function Modal(props) {
       open = props.open;
 
   var closeModal = function closeModal(_) {
-    console.log('hi');
     isOpen(false);
   };
 
