@@ -1,16 +1,17 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './Modal.css'
-
 export default function Modal(props) {
-    let {content} = props
-    const [open, setOpen] = useState(false)
+    let {content, isOpen, open} = props
+    
     const closeModal = _ => {
-        setOpen(!open)
+        console.log('hi');
+        isOpen(false)
     }
+
     return (
         <>
             {
-                !open && (
+                open && (
                     <aside className='background-Modal'>
                         <div className='container-Modal'>
                             <button className="button-Modal" onClick={closeModal}>&#x2715;</button>
