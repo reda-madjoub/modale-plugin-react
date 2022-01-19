@@ -5,7 +5,7 @@
   "description": "React component Modal",
   "license": "MIT",
   "private": false,
-  "main": "dist/Modal.js",
+  "main": "dist/index.js",
   "module": "dist/Modal.js",
   "files": [
     "dist",
